@@ -114,3 +114,41 @@ print(np.where(c > 5))        # 1st row 1st element, 1st row 2nd element
 print(np.where(c > 5,"pass","fail"))
 
 # np.where(condition,value_if_true,value_if_false)
+
+arr1 = np.array([[30,10,90],
+                [20,40,70],
+                [25,45,80]])
+
+print(arr1[0:2,0:2])
+
+print(arr1[:,0:2])
+
+print(arr1[0:2,:])
+
+print(arr1[::-1,:])
+
+print(arr1[:,::-1])
+
+print(arr1[0:2,::-1])
+
+print(arr1[::-1,::-1])
+
+print(np.sort(arr1))
+
+print(np.sort(arr1)[:,::-1])
+
+print(np.sort(arr1)[::-1,::-1])
+
+print(np.sort(arr1,axis=0))
+
+print(np.sort(arr1,axis=0)[:,::-1])
+
+print(np.sort(arr1,axis=0)[::-1,::-1])
+
+arr2 = np.array([4.65,5.35,6.98,7.5])
+
+print(np.floor(arr2))   # returns the largest iteger <= the number given
+
+print(np.round(arr2))   # round the number to the nearest integer by default
+
+print(np.ceil(arr2))    # return the smallest number >= the number given
